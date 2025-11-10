@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockLine Puzzle - Claim Your Rewards!</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        
+        /* --- STYLES FOR ENTRY OVERLAY --- */
+        #entry-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+        #entry-overlay.clickable { cursor: pointer; }
+        #entry-overlay.waiting { cursor: wait; }
+
+        #timer-message { font-size: 18px; }
+        #countdown { font-weight: bold; font-size: 22px; color: #50E3C2; }
+        
+        #entry-overlay h2 { font-size: 28px; margin-bottom: 10px; }
+        #entry-overlay p { font-size: 18px; padding: 0 20px; }
+        
+        .click-box {
+            border: 2px solid white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            background-color: #4A90E2;
+            display: none; /* Hidden by default */
+        }
+        /* ---------------------------------- */
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .header-logo { max-width: 50px; border-radius: 12px; margin-right: 15px; }
+        .card-header h1 { margin: 0; font-size: 24px; font-weight: 600; color: #333; }
+        
+        .ad-placeholder-internal {
+            width: 100%;
+            padding: 20px 0;
+            border-top: 1px solid #e9ecef;
+            border-bottom: 1px solid #e9ecef;
+            background-color: #fdfdfd;
+        }
+
+        .card-body { padding: 25px; }
+        .card-body h2 { margin-top: 0; color: #4A90E2; font-size: 22px; }
+        .card-body p { line-height: 1.7; font-size: 16px; margin-bottom: 1em; }
+        .card-body p.urdu-text { font-size: 17px; }
+        .highlight { font-weight: bold; color: #d9534f; }
+        
+        .footer { text-align: center; margin-top: 30px; padding: 15px; color: #888; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <!-- =========== ENTRY OVERLAY =========== -->
+    <div id="entry-overlay" class="waiting">
+        <div>
+            <h2>Welcome!</h2>
+            <p id="timer-message">Please wait for <span id="countdown">10</span> seconds to continue...</p>
+            <div class="click-box">TAP TO CONTINUE</div>
+            <p lang="ur" dir="rtl" style="margin-top: 20px;">آگے بڑھنے کے لیے براہ کرم انتظار کریں۔</p>
+        </div>
+    </div>
+    <!-- ===================================== -->
+
+    <div class="container">
+        <div class="main-card">
+            <!-- Header Section -->
+            <div class="card-header">
+                <img src="https://i.ibb.co/9kY1tpwF/blockine-icon.jpg" alt="BlockLine Puzzle Icon" class="header-logo">
+                <h1>BlockLine Puzzle</h1>
+            </div>
+
+            <!-- =========== NATIVE BANNER AD SLOT (NEW POSITION) =========== -->
+            <div class="ad-placeholder-internal">
+                <div id="container-2c05fd49cb501befe8e1bf317d40ee5b"></div>
+            </div>
+            <!-- ========================================================= -->
+
+            <!-- Content/Instructions Section -->
+            <div class="card-body">
+                <h2>Claim Your In-Game Rewards!</h2>
+                <p>To get rewards like <strong>Skip Level</strong> or <strong>Restart Level</strong>, please support us by viewing ads.</p>
+                <p class="highlight">Thank you for your support!</p>
+                
+                <hr style="margin: 30px 0;">
+
+                <h2 lang="ur" dir="rtl">اپنے گیم کے انعامات حاصل کریں!</h2>
+                <p lang="ur" dir="rtl" class="urdu-text"><strong>لیول چھوڑنے (Skip Level)</strong> جیسے انعامات حاصل کرنے کے لیے، براہ کرم اشتہارات دیکھ کر ہماری مدد کریں۔</p>
+                <p lang="ur" dir="rtl" class="urdu-text highlight">آپ کے تعاون کا شکریہ!</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 BlockLine Puzzle Team. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- =========== ALL SCRIPTS =========== -->
+    <script async="async" data-cfasync="false" src="//pl27096943.effectivegatecpm.com/2c05fd49cb501befe8e1bf317d40ee5b/invoke.js"></script>
+    <script id="socialBarScript" type="text/plain" data-src="//pl26479822.effectivegatecpm.com/11/f3/83/11f3830187c378aedebef88b0bcd83a0.js"></script>
+    
+    <script type="text/javascript">
+        const directLinkUrl = "https://www.effectivegatecpm.com/zi30dfhjnn?key=b78830ea0cb80a28c4b278ee2e122b06";
+        const overlay = document.getElementById('entry-overlay');
+        const clickBox = document.querySelector('.click-box');
+        const countdownElement = document.getElementById('countdown');
+        const timerMessage = document.getElementById('timer-message');
+
+        let isAdActionAllowed = false; // Prevents click action until countdown is done
+        let adTriggered = false; // Ensures ad opens only once
+
+        // 1. Show the "TAP TO CONTINUE" button after 2 seconds
+        setTimeout(() => {
+            clickBox.style.display = 'block';
+        }, 2000);
+
+        // 2. Start the 10-second countdown timer
+        let secondsLeft = 10;
+        const timerInterval = setInterval(() => {
+            secondsLeft--;
+            countdownElement.textContent = secondsLeft;
+
+            if (secondsLeft <= 0) {
+                clearInterval(timerInterval);
+                isAdActionAllowed = true; // Allow the ad to open on click now
+                overlay.classList.remove('waiting');
+                overlay.classList.add('clickable');
+                timerMessage.innerHTML = "<strong>You can now click to continue!</strong>";
+            }
+        }, 1000);
+
+        // 3. Handle the click on the overlay
+        overlay.addEventListener('click', () => {
+            // Only proceed if countdown is finished and ad has not been triggered yet
+            if (isAdActionAllowed && !adTriggered) {
+                adTriggered = true;
+
+                // Open the direct link ad
+                window.open(directLinkUrl, '_blank');
+                
+                // Hide the overlay
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300);
+
+                // Dynamically load the Social Bar script
+                const socialBarScriptTag = document.getElementById('socialBarScript');
+                if (socialBarScriptTag) {
+                    const newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    newScript.src = socialBarScriptTag.getAttribute('data-src');
+                    document.body.appendChild(newScript);
+                }
+            }
+        });
+    </script>
+    <!-- ================================= -->
+
+</body>
+</html>
